@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .card {
+    @apply block p-6 bg-white rounded-lg;
+
+    &.is-active {
+      @apply border-2 border-blue-yourbrand-500;
+    }
+
+    &:not(.is-active) {
+      @apply shadow border border-transparent;
+
+      /* Hover */
+      @apply transition-shadow duration-200 ease-linear;
+      @apply hover:shadow-lg;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "downlevelIteration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "useUnknownInCatchVariables": false,
+    "baseUrl": ".",
+    "incremental": true,
+    "typeRoots": ["../../typings","../../node_modules/@types","node_modules/@types"]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "tests/**/*.*.ts"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "jsx": "react",
+      "lib": ["dom", "es2017"],
+      "module": "CommonJS",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "allowJs": false,
+      "noEmit": true,
+      "incremental": true,
+      "isolatedModules": true,
+      "alwaysStrict": false,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "downlevelIteration": true
+    }
+  }
+}

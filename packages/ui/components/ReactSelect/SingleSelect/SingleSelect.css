@@ -1,0 +1,6 @@
+@tailwind components;
+
+@layer components {
+  input[type='text']:focus { box-shadow: none; }
+}
+

@@ -1,0 +1,17 @@
+@tailwind components;
+
+@layer components {
+  .input {
+    &.is-primary {
+      @apply border px-3 py-2 focus:ring-blue-yourbrand-500 focus:border-blue-yourbrand-500 border-gray-300 placeholder-gray-700;
+    }
+
+    &.is-error {
+      @apply pr-10 border-red-300 text-red-900 placeholder-red-600 focus:ring-red-600 focus:border-red-600;
+    }
+
+    &.is-error-slim {
+      @apply border-red-300 text-red-900 placeholder-red-600 focus:ring-red-600 focus:border-red-600;
+    }
+  }
+}

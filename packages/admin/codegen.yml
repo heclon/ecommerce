@@ -1,0 +1,14 @@
+schema: ./server/generated/schema.graphql
+documents:
+  - 'graphql/**/*.graphql'
+generates:
+  graphql/types.generated.ts:
+    plugins:
+      - typescript
+  ./:
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: graphql/types.generated.ts
+    plugins:
+      - typescript-operations
+      - typescript-urql

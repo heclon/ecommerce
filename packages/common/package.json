@@ -1,0 +1,55 @@
+{
+  "name": "@ecommerce/common",
+  "version": "0.1.0",
+  "description": "Common helpers to shared amongst all packages",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run -T tsc",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cloudwatch": "^3.279.0",
+    "@graphql-tools/wrap": "^8.4.16",
+    "analytics-node": "^6.2.0",
+    "auth0": "^2.36.1",
+    "bullmq": "^1.78.2",
+    "dayjs": "^1.10.6",
+    "dotenv-flow": "^3.2.0",
+    "falsey": "1.0.0",
+    "graphql": "^16.0.0",
+    "require-all": "^3.0.0",
+    "slack-notify": "2.0.6",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.11.3",
+    "@graphql-codegen/near-operation-file-preset": "^2.4.0",
+    "@graphql-codegen/plugin-helpers": "^2.6.1",
+    "@graphql-codegen/typed-document-node": "^2.3.2",
+    "@graphql-codegen/typescript": "^2.7.2",
+    "@graphql-codegen/typescript-operations": "2.5.2",
+    "@signed/jest-alphabetical-sequencer": "^0.1.1",
+    "@types/analytics-node": "3.1.10",
+    "@types/d3-format": "^1.4.1",
+    "@types/d3-time-format": "^2.1.1",
+    "@types/jest": "28.1.3",
+    "@types/node": "^16.6.1",
+    "@types/require-all": "^3.0.3",
+    "fastify": "^3.20.2",
+    "fishery": "2.2.2",
+    "jest": "^28.1.3",
+    "jest-circus": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "jest-json-schema": "^6.0.0",
+    "jest-junit": "^13.0.0",
+    "jest-localstorage-mock": "^2.4.14",
+    "jest-preview": "^0.3.1",
+    "jest-runner-groups": "^2.1.0",
+    "mercurius": "^9.4.0",
+    "pino": "^6.13.0",
+    "ts-jest": "28.0.8"
+  },
+  "engines": {
+    "node": "16"
+  }
+}

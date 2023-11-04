@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "compilerOptions": {
+    "importHelpers": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "moduleResolution": "node",
+    "typeRoots": ["../../typings", "../../node_modules/@types", "./node_modules/@types"]
+  },
+  "exclude": [
+    "**/__tests__/*.*",
+    "**/__test-utils__/*.*",
+    "**/__mocks__/*.*",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+  ]
+}

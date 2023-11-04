@@ -1,0 +1,44 @@
+
+.highlighted_title {
+  z-index: 10;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.highlighted_title::after {
+  content: " ";
+  z-index: -1;
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 110%;
+  translate: -10px -10px;
+  border-radius: 50px;
+  background-color: #00FFFF;
+  transition: width 0.7s ease-in-out;
+}
+
+/* Background highlighter appears on hover */
+.animated_highlighted_title {
+  z-index: 10;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.animated_highlighted_title::after {
+  content: " ";
+  z-index: -1;
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 0;
+  translate: -10px -10px;
+  border-radius: 50px;
+  background-color: #CDFEF5;
+  transition: width 0.7s ease-in-out;
+}
+.animated_highlighted_title:hover::after {
+   width: 110%;
+}

@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formatters rrule rrule formatter  1`] = `""`;
+
+exports[`formatters rrule rrule formatter FREQ=DAILY;COUNT=1 1`] = `"One-off session"`;
+
+exports[`formatters rrule rrule formatter FREQ=WEEKLY;INTERVAL=1;BYDAY=MO,TU 1`] = `"every week on Monday, Tuesday"`;

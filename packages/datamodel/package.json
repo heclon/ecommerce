@@ -1,0 +1,36 @@
+{
+  "name": "@ecommerce/datamodel",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "yarn run generate && yarn run -T tsc",
+    "start": "node -r dotenv/config build/app.js",
+    "generate": "yarn generate:prisma && yarn generate:procho-prisma",
+    "generate:procho-prisma": "yarn prisma generate --schema prochoPrisma/schema.prisma && ./fix-procho-prisma-package.sh",
+    "generate:prisma": "yarn prisma generate --schema prisma/schema.prisma",
+    "generate:prisma:watch": "yarn prisma generate --watch",
+    "seed": "yarn prisma db seed --preview-feature",
+    "migrate:dev": "yarn prisma migrate dev",
+    "migrate:dev:create-only": "yarn prisma migrate dev --create-only",
+    "migrate:deploy": "yarn prisma migrate deploy",
+    "prisma:reset": "yarn prisma migrate reset --force",
+    "prisma:reset-procho": "yarn prisma db push --accept-data-loss --schema prochoPrisma/schema.prisma",
+    "postinstall": "yarn run generate",
+    "dev": "yarn run generate && yarn run -T npm-run-all --parallel generate:prisma:watch"
+  },
+  "prisma": {
+    "seed": "yarn run -T ts-node prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "2.30.3",
+    "prisma": "^2.30.3"
+  },
+  "devDependencies": {
+    "slugify": "^1.6.0",
+    "ts-jest": "^28.0.8"
+  },
+  "engines": {
+    "node": "16"
+  }
+}

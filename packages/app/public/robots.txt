@@ -1,0 +1,7 @@
+# Block all crawlers for /participant
+User-agent: *
+Disallow: /participant
+
+# Allow all crawlers
+User-agent: *
+Allow: /

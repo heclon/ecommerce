@@ -1,0 +1,12 @@
+{
+  /*
+    This file is used as a workaround for https://github.com/graphql-nexus/schema/issues/391
+    It allows the nexus schema generation to work (done via `yarn run generate:procho`).
+  */
+  "compilerOptions": {
+    "noEmit": "true",
+    "strict": true,
+    "lib": ["esnext"],
+    "esModuleInterop": true
+  }
+}

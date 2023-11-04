@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GeocodeService fetchGeocodeResults when provided with a "address" as the params 1`] = `
+Object {
+  "address_components": Array [
+    Object {
+      "long_name": "11",
+      "short_name": "11",
+      "types": Array [
+        "street_number",
+      ],
+    },
+    Object {
+      "long_name": "Smith Street",
+      "short_name": "Smith St",
+      "types": Array [
+        "route",
+      ],
+    },
+    Object {
+      "long_name": "Perth",
+      "short_name": "Perth",
+      "types": Array [
+        "locality",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "City of Vincent",
+      "short_name": "Vincent",
+      "types": Array [
+        "administrative_area_level_2",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "Western Australia",
+      "short_name": "WA",
+      "types": Array [
+        "administrative_area_level_1",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "Australia",
+      "short_name": "AU",
+      "types": Array [
+        "country",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "6000",
+      "short_name": "6000",
+      "types": Array [
+        "postal_code",
+      ],
+    },
+  ],
+  "formatted_address": "11 Smith St, Perth WA 6000, Australia",
+  "geometry": Object {
+    "bounds": Object {
+      "northeast": Object {
+        "lat": -31.9424923,
+        "lng": 115.8702617,
+      },
+      "southwest": Object {
+        "lat": -31.9429313,
+        "lng": 115.8697213,
+      },
+    },
+    "location": Object {
+      "lat": -31.9427541,
+      "lng": 115.8700133,
+    },
+    "location_type": "ROOFTOP",
+    "viewport": Object {
+      "northeast": Object {
+        "lat": -31.9413628197085,
+        "lng": 115.8713404802915,
+      },
+      "southwest": Object {
+        "lat": -31.9440607802915,
+        "lng": 115.8686425197085,
+      },
+    },
+  },
+  "place_id": "ChIJGftgVdu6MioRXdvPbM_pXtk",
+  "types": Array [
+    "premise",
+  ],
+}
+`;
+
+exports[`GeocodeService fetchGeocodeResults when provided with a "placeId" as the params 1`] = `
+Object {
+  "address_components": Array [
+    Object {
+      "long_name": "11",
+      "short_name": "11",
+      "types": Array [
+        "street_number",
+      ],
+    },
+    Object {
+      "long_name": "Smith Street",
+      "short_name": "Smith St",
+      "types": Array [
+        "route",
+      ],
+    },
+    Object {
+      "long_name": "Highgate",
+      "short_name": "Highgate",
+      "types": Array [
+        "locality",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "City of Vincent",
+      "short_name": "Vincent",
+      "types": Array [
+        "administrative_area_level_2",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "Western Australia",
+      "short_name": "WA",
+      "types": Array [
+        "administrative_area_level_1",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "Australia",
+      "short_name": "AU",
+      "types": Array [
+        "country",
+        "political",
+      ],
+    },
+    Object {
+      "long_name": "6003",
+      "short_name": "6003",
+      "types": Array [
+        "postal_code",
+      ],
+    },
+  ],
+  "formatted_address": "11 Smith St, Highgate WA 6003, Australia",
+  "geometry": Object {
+    "location": Object {
+      "lat": -31.9427541,
+      "lng": 115.8700133,
+    },
+    "location_type": "ROOFTOP",
+    "viewport": Object {
+      "northeast": Object {
+        "lat": -31.9414539197085,
+        "lng": 115.8714692302915,
+      },
+      "southwest": Object {
+        "lat": -31.9441518802915,
+        "lng": 115.8687712697085,
+      },
+    },
+  },
+  "place_id": "ChIJv6RYJBu7MioRzs6dyMwSVJM",
+  "plus_code": Object {
+    "compound_code": "3V4C+V2 Highgate WA, Australia",
+    "global_code": "4PWQ3V4C+V2",
+  },
+  "types": Array [
+    "street_address",
+  ],
+}
+`;

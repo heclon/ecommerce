@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Emailer sendServiceRequestInterest 1`] = `
+Object {
+  "attachments": Array [],
+  "from": "no-reply@providerchoice.com.au",
+  "html": "    <div style=\\"border: thin solid lightgrey; font-family: Arial, Helvetica, sans-serif;\\">
+      <div style=\\"padding:1rem; background-color: #4E42D3; color: white;\\">
+        <h2>Service Request Interest</h2>
+      </div>
+      <div style=\\"padding: 1rem;\\">
+        <p>The following provider has shown an interest in a service request.</p>
+        <p><span style=\\"font-weight: bold;\\">Provider email:</span> test@provider.com.au</p>
+        <p><span style=\\"font-weight: bold;\\">Request ID:</span> fake-request-is</p>
+        <p><span style=\\"font-weight: bold;\\">Request created:</span> 11/11/2022</p>
+        <p><span style=\\"font-weight: bold;\\">Support Name:</span> Test Support</p>
+        <p><span style=\\"font-weight: bold;\\">Participant given name:</span> Steve</p>
+      </div>
+    </div>",
+  "subject": "Service Request Interest: Steve - Test Support (fake-request-is)",
+  "text": "SERVICE REQUEST INTEREST
+
+The following provider has shown an interest in a service request.
+
+Provider email: test@provider.com.au
+
+Request ID: fake-request-is
+
+Request created: 11/11/2022
+
+Support Name: Test Support
+
+Participant given name: Steve",
+  "to": "providers@ecommerce.com.au",
+}
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`trimInputsExchange works 1`] = `
+Object {
+  "variables": Object {
+    "array": Array [
+      Object {
+        "id": "1",
+        "value": "whitespaces in Arrays",
+      },
+      Object {
+        "id": "2",
+        "value": "another value with whitespaces",
+      },
+    ],
+    "map": Map {
+      "x" => "y",
+      "z" => "whitespaces in Maps",
+    },
+    "null": null,
+    "set": Set {
+      "whitespaces in Sets",
+      "another string to fix",
+    },
+    "testWhiteSpaces": "String with whitespaces before and after",
+  },
+}
+`;
